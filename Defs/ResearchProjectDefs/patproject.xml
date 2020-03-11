@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchTabDef>
+		<defName>PlantsAndThings</defName>
+		<label>Plants and Things</label>
+	</ResearchTabDef>
+
+	<ResearchProjectDef>
+		<defName>GrowSteel</defName>
+		<label>Grow steel</label>
+		<description>Need steel? No worry! Discover this conveniet plant that turns into steel once fully grown!</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Devilstrand</li>
+			<li>DrugProduction</li>
+			<li>Hydroponics</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewX>4</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>PlantsAndThingsTier1</defName>
+		<label>Tier 1 Plans and Things</label>
+		<description>DevilstrandCloth,Beer,Cloth,WoolMegasloth,Pemmican,Kibble,Gun_LMG,Steel,WoodLog,Meat_Human,Meat_Megaspider</description>
+		<baseCost>10000</baseCost>
+		<tab>PlantsAndThings</tab>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Cocoa</li>
+			<li>Devilstrand</li>
+			<li>DrugProduction</li>
+			<li>Hydroponics</li>
+			<li>Brewing</li>
+			<li>MultibarrelWeapons</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>PlantsAndThingsTier2</defName>
+		<label>Tier 2 Plans and Things</label>
+		<description>WoolAlpaca,WoolBison,WoolSheep,Meat_Chicken,Meat_Horse,Meat_Wolf,Chocolate,Gun_HeavySMG,ComponentIndustrial,Chemfuel,Neutroamine</description>
+		<baseCost>11000</baseCost>
+		<tab>PlantsAndThings</tab>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>PlantsAndThingsTier1</li>
+			<li>Fabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>PlantsAndThingsTier3</defName>
+		<label>Tier 3 Plans and Things</label>
+		<description>Synthread,WoolMuffalo,Meat_Cow,Meat_Fox,Meat_Pig,Meat_Yak,Gun_ChainShotgun,Gold,Plasteel,MedicineIndustrial</description>
+		<baseCost>12000</baseCost>
+		<tab>PlantsAndThings</tab>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1</researchViewY>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>PlantsAndThingsTier2</li>
+			<li>AdvancedFabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>PlantsAndThingsTier4</defName>
+		<label>Tier 4 Plans and Things</label>
+		<description>Leather_Thrumbo,Hyperweave,Meat_Thrumbo,Meat_Venison,Gun_ChargeRifle,ComponentSpacer,Jade,Uranium</description>
+		<baseCost>13000</baseCost>
+		<tab>PlantsAndThings</tab>
+		<researchViewX>4</researchViewX>
+		<researchViewY>1</researchViewY>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>PlantsAndThingsTier3</li>
+			<li>ChargedShot</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>PlantsAndThingsTier5</defName>
+		<label>Tier 5 Plans and Things</label>
+		<description>BionicEar,BionicEye,BionicStomach,BionicArm,BionicHeart,BionicLeg,BionicSpine</description>
+		<baseCost>14000</baseCost>
+		<tab>PlantsAndThings</tab>
+		<researchViewX>5</researchViewX>
+		<researchViewY>1</researchViewY>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>PlantsAndThingsTier4</li>
+			<li>Bionics</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>PlantsAndThingsTier6</defName>
+		<label>Tier 6 Plans and Things</label>
+		<description>Silver,ArchotechArm,ArchotechEye,ArchotechLeg,Heart,Kidney,Liver,Lung</description>
+		<baseCost>15000</baseCost>
+		<tab>PlantsAndThings</tab>
+		<researchViewX>6</researchViewX>
+		<researchViewY>1</researchViewY>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>PlantsAndThingsTier5</li>
+			<li>ShipComputerCore</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+
+</Defs>
