@@ -2,19 +2,12 @@
 <ModMetaData>
   <name>Plants and Things</name>
   <author>OdysseyScorpio</author>
-  <packageId>OdysseyScorpio.PlantsAndThings.20200311</packageId>
+  <packageId>OdysseyScorpio.PlantsAndThings.20200314</packageId>
   <supportedVersions>
     <li>1.0</li>
     <li>1.1</li>
   </supportedVersions>
   <url>https://github.com/OdysseyScorpio/Plants-and-Things</url>
-  <description>
-  Adds extra research which unlocks the ability to grow and farm 50 different plants.
-
-  Grow yourself cloth, food, guns and medical items if you have the right research. Items will require research plus one of 6 tiered research projects. 
-
-
-  
-  
+  <description>Adds extra research which unlocks the ability to grow and farm 50 different plants.\n\nGrow yourself cloth, food, guns and medical items if you have the right research. Items will require research plus one of 6 tiered research projects.\n\nUpdated to include stone blocks and an initial research project requirement - also reduced amount of research work each tier requires.  
   </description>
 </ModMetaData>

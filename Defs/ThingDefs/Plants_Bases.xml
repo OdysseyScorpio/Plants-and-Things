@@ -210,6 +210,39 @@
     </plant>
   </ThingDef>
 
-
+  <ThingDef Name="PlantsAndThingsBlocksBase" Abstract="True">
+    <category>Plant</category>
+    <thingClass>Plant</thingClass>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <tickerType>Long</tickerType>
+    <selectable>False</selectable>
+    <neverMultiSelect>True</neverMultiSelect>
+    <drawerType>MapMeshOnly</drawerType>
+    <pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
+    <graphicData>
+      <shaderType>CutoutPlant</shaderType>
+    </graphicData>
+    <ingestible>
+      <foodType>Plant</foodType>
+      <preferability>NeverForNutrition</preferability>
+    </ingestible>
+    <plant>
+      <fertilityMin>0.0</fertilityMin>
+      <fertilitySensitivity>0.0</fertilitySensitivity>
+      <soundHarvesting>Harvest_Standard</soundHarvesting>
+      <soundHarvestFinish>Harvest_Standard_Finish</soundHarvestFinish>
+      <harvestWork>350</harvestWork>
+      <sowWork>450</sowWork>
+      <topWindExposure>0.0</topWindExposure>
+      <visualSizeRange>
+        <min>0.01</min>
+        <max>1.50</max>
+      </visualSizeRange>
+    </plant>
+  </ThingDef>
 
 </Defs>

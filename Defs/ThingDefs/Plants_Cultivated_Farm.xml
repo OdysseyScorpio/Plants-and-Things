@@ -1,6 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingDef ParentName="PlantsAndThingsTier1Base">
+        <defName>PlantWoolMegasloth</defName>
+        <label>Megasloth Wool Bush</label>
+        <description>Need Megasloth Wool? Why not grow it?</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Cloth/WoolMegasloth</texPath>
+            <graphicClass>Graphic_random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible>
+            <foodType>Plant</foodType>
+            <preferability>NeverForNutrition</preferability>
+        </ingestible>
+        <plant>
+            <fertilitySensitivity>1.0</fertilitySensitivity>
+            <growDays>6</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>WoolMegasloth</harvestedThingDef>
+            <harvestYield>15</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <sowMinSkill>6</sowMinSkill>
+            <sowResearchPrerequisites>
+                <li>PlantsAndThingsTier1</li>
+            </sowResearchPrerequisites>
+            <immatureGraphicPath>Things/Cloth/WoolMegasloth/growingplants</immatureGraphicPath>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.5</min>
+                <max>1.0</max>
+            </visualSizeRange>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="PlantsAndThingsTier1Base">
         <defName>PlantBeer</defName>
         <label>Beer Berries</label>
         <description>Need Beers? Why not grow them?</description>
@@ -33,46 +73,6 @@
                 <li>PlantsAndThingsTier1</li>
             </sowResearchPrerequisites>
             <immatureGraphicPath>Things/Food/Beer/growingplants</immatureGraphicPath>
-            <topWindExposure>0.1</topWindExposure>
-            <visualSizeRange>
-                <min>0.5</min>
-                <max>1.0</max>
-            </visualSizeRange>
-        </plant>
-    </ThingDef>
-    <ThingDef ParentName="PlantsAndThingsTier1Base">
-        <defName>PlantGun_LMG</defName>
-        <label>LMG Tree</label>
-        <description>Need an LMG? Why not grow it?</description>
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-        </statBases>
-        <graphicData>
-            <texPath>Things/Gun/Gun_LMG</texPath>
-            <graphicClass>Graphic_random</graphicClass>
-        </graphicData>
-        <selectable>true</selectable>
-        <pathCost>10</pathCost>
-        <ingestible>
-            <foodType>Plant</foodType>
-            <preferability>NeverForNutrition</preferability>
-        </ingestible>
-        <plant>
-            <fertilitySensitivity>1.0</fertilitySensitivity>
-            <growDays>6</growDays>
-            <dieIfLeafless>true</dieIfLeafless>
-            <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>Gun_LMG</harvestedThingDef>
-            <harvestYield>1</harvestYield>
-            <sowTags>
-                <li>Ground</li>
-                <li>Hydroponic</li>
-            </sowTags>
-            <sowMinSkill>6</sowMinSkill>
-            <sowResearchPrerequisites>
-                <li>PlantsAndThingsTier1</li>
-            </sowResearchPrerequisites>
-            <immatureGraphicPath>Things/Gun/Gun_LMG/growingplants</immatureGraphicPath>
             <topWindExposure>0.1</topWindExposure>
             <visualSizeRange>
                 <min>0.5</min>
@@ -241,6 +241,46 @@
         </plant>
     </ThingDef>
     <ThingDef ParentName="PlantsAndThingsTier1Base">
+        <defName>PlantGun_LMG</defName>
+        <label>LMG Tree</label>
+        <description>Need an LMG? Why not grow it?</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Gun/Gun_LMG</texPath>
+            <graphicClass>Graphic_random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible>
+            <foodType>Plant</foodType>
+            <preferability>NeverForNutrition</preferability>
+        </ingestible>
+        <plant>
+            <fertilitySensitivity>1.0</fertilitySensitivity>
+            <growDays>6</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>Gun_LMG</harvestedThingDef>
+            <harvestYield>1</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <sowMinSkill>6</sowMinSkill>
+            <sowResearchPrerequisites>
+                <li>PlantsAndThingsTier1</li>
+            </sowResearchPrerequisites>
+            <immatureGraphicPath>Things/Gun/Gun_LMG/growingplants</immatureGraphicPath>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.5</min>
+                <max>1.0</max>
+            </visualSizeRange>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="PlantsAndThingsTier1Base">
         <defName>PlantSteel</defName>
         <label>Steel Grass</label>
         <description>Need Steel? Why not grow it?</description>
@@ -280,55 +320,15 @@
             </visualSizeRange>
         </plant>
     </ThingDef>
-    <ThingDef ParentName="PlantsAndThingsTier1Base">
-        <defName>PlantWoolMegasloth</defName>
-        <label>Megasloth Wool Bush</label>
-        <description>Need Megasloth Wool? Why not grow it?</description>
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-        </statBases>
-        <graphicData>
-            <texPath>Things/Cloth/WoolMegasloth</texPath>
-            <graphicClass>Graphic_random</graphicClass>
-        </graphicData>
-        <selectable>true</selectable>
-        <pathCost>10</pathCost>
-        <ingestible>
-            <foodType>Plant</foodType>
-            <preferability>NeverForNutrition</preferability>
-        </ingestible>
-        <plant>
-            <fertilitySensitivity>1.0</fertilitySensitivity>
-            <growDays>6</growDays>
-            <dieIfLeafless>true</dieIfLeafless>
-            <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>WoolMegasloth</harvestedThingDef>
-            <harvestYield>15</harvestYield>
-            <sowTags>
-                <li>Ground</li>
-                <li>Hydroponic</li>
-            </sowTags>
-            <sowMinSkill>6</sowMinSkill>
-            <sowResearchPrerequisites>
-                <li>PlantsAndThingsTier1</li>
-            </sowResearchPrerequisites>
-            <immatureGraphicPath>Things/Cloth/WoolMegasloth/growingplants</immatureGraphicPath>
-            <topWindExposure>0.1</topWindExposure>
-            <visualSizeRange>
-                <min>0.5</min>
-                <max>1.0</max>
-            </visualSizeRange>
-        </plant>
-    </ThingDef>
     <ThingDef ParentName="PlantsAndThingsTier2Base">
-        <defName>PlantChemfuel</defName>
-        <label>Chemfuel Berries</label>
-        <description>Need Chemfuel? Why not grow it?</description>
+        <defName>PlantWoolAlpaca</defName>
+        <label>Alpaca Wool Bush</label>
+        <description>Need Alpaca Wool? Why not grow it?</description>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
         </statBases>
         <graphicData>
-            <texPath>Things/Mat/Chemfuel</texPath>
+            <texPath>Things/Cloth/WoolAlpaca</texPath>
             <graphicClass>Graphic_random</graphicClass>
         </graphicData>
         <selectable>true</selectable>
@@ -342,7 +342,7 @@
             <growDays>7</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>Chemfuel</harvestedThingDef>
+            <harvestedThingDef>WoolAlpaca</harvestedThingDef>
             <harvestYield>10</harvestYield>
             <sowTags>
                 <li>Ground</li>
@@ -352,7 +352,7 @@
             <sowResearchPrerequisites>
                 <li>PlantsAndThingsTier2</li>
             </sowResearchPrerequisites>
-            <immatureGraphicPath>Things/Mat/Chemfuel/growingplants</immatureGraphicPath>
+            <immatureGraphicPath>Things/Cloth/WoolAlpaca/growingplants</immatureGraphicPath>
             <topWindExposure>0.1</topWindExposure>
             <visualSizeRange>
                 <min>0.5</min>
@@ -361,14 +361,14 @@
         </plant>
     </ThingDef>
     <ThingDef ParentName="PlantsAndThingsTier2Base">
-        <defName>PlantComponentIndustrial</defName>
-        <label>Component Plant</label>
-        <description>Need Components? Why not grow them?</description>
+        <defName>PlantWoolBison</defName>
+        <label>Bison Wool Bush</label>
+        <description>Need Bison Wool? Why not grow it?</description>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
         </statBases>
         <graphicData>
-            <texPath>Things/Mat/ComponentIndustrial</texPath>
+            <texPath>Things/Cloth/WoolBison</texPath>
             <graphicClass>Graphic_random</graphicClass>
         </graphicData>
         <selectable>true</selectable>
@@ -382,8 +382,8 @@
             <growDays>7</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>ComponentIndustrial</harvestedThingDef>
-            <harvestYield>3</harvestYield>
+            <harvestedThingDef>WoolBison</harvestedThingDef>
+            <harvestYield>10</harvestYield>
             <sowTags>
                 <li>Ground</li>
                 <li>Hydroponic</li>
@@ -392,7 +392,7 @@
             <sowResearchPrerequisites>
                 <li>PlantsAndThingsTier2</li>
             </sowResearchPrerequisites>
-            <immatureGraphicPath>Things/Mat/ComponentIndustrial/growingplants</immatureGraphicPath>
+            <immatureGraphicPath>Things/Cloth/WoolBison/growingplants</immatureGraphicPath>
             <topWindExposure>0.1</topWindExposure>
             <visualSizeRange>
                 <min>0.5</min>
@@ -401,14 +401,14 @@
         </plant>
     </ThingDef>
     <ThingDef ParentName="PlantsAndThingsTier2Base">
-        <defName>PlantGun_HeavySMG</defName>
-        <label>Heavy SMG Tree</label>
-        <description>Need a Heavy SMG? Why not grow it?</description>
+        <defName>PlantWoolSheep</defName>
+        <label>Sheep Wool Bush</label>
+        <description>Need Sheep Wool? Why not grow it?</description>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
         </statBases>
         <graphicData>
-            <texPath>Things/Gun/Gun_HeavySMG</texPath>
+            <texPath>Things/Cloth/WoolSheep</texPath>
             <graphicClass>Graphic_random</graphicClass>
         </graphicData>
         <selectable>true</selectable>
@@ -422,8 +422,8 @@
             <growDays>7</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>Gun_HeavySMG</harvestedThingDef>
-            <harvestYield>1</harvestYield>
+            <harvestedThingDef>WoolSheep</harvestedThingDef>
+            <harvestYield>10</harvestYield>
             <sowTags>
                 <li>Ground</li>
                 <li>Hydroponic</li>
@@ -432,7 +432,7 @@
             <sowResearchPrerequisites>
                 <li>PlantsAndThingsTier2</li>
             </sowResearchPrerequisites>
-            <immatureGraphicPath>Things/Gun/Gun_HeavySMG/growingplants</immatureGraphicPath>
+            <immatureGraphicPath>Things/Cloth/WoolSheep/growingplants</immatureGraphicPath>
             <topWindExposure>0.1</topWindExposure>
             <visualSizeRange>
                 <min>0.5</min>
@@ -561,14 +561,14 @@
         </plant>
     </ThingDef>
     <ThingDef ParentName="PlantsAndThingsTier2Base">
-        <defName>PlantWoolAlpaca</defName>
-        <label>Alpaca Wool Bush</label>
-        <description>Need Alpaca Wool? Why not grow it?</description>
+        <defName>PlantGun_HeavySMG</defName>
+        <label>Heavy SMG Tree</label>
+        <description>Need a Heavy SMG? Why not grow it?</description>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
         </statBases>
         <graphicData>
-            <texPath>Things/Cloth/WoolAlpaca</texPath>
+            <texPath>Things/Gun/Gun_HeavySMG</texPath>
             <graphicClass>Graphic_random</graphicClass>
         </graphicData>
         <selectable>true</selectable>
@@ -582,177 +582,177 @@
             <growDays>7</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>WoolAlpaca</harvestedThingDef>
-            <harvestYield>10</harvestYield>
-            <sowTags>
-                <li>Ground</li>
-                <li>Hydroponic</li>
-            </sowTags>
-            <sowMinSkill>7</sowMinSkill>
-            <sowResearchPrerequisites>
-                <li>PlantsAndThingsTier2</li>
-            </sowResearchPrerequisites>
-            <immatureGraphicPath>Things/Cloth/WoolAlpaca/growingplants</immatureGraphicPath>
-            <topWindExposure>0.1</topWindExposure>
-            <visualSizeRange>
-                <min>0.5</min>
-                <max>1.0</max>
-            </visualSizeRange>
-        </plant>
-    </ThingDef>
-    <ThingDef ParentName="PlantsAndThingsTier2Base">
-        <defName>PlantWoolBison</defName>
-        <label>Bison Wool Bush</label>
-        <description>Need Bison Wool? Why not grow it?</description>
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-        </statBases>
-        <graphicData>
-            <texPath>Things/Cloth/WoolBison</texPath>
-            <graphicClass>Graphic_random</graphicClass>
-        </graphicData>
-        <selectable>true</selectable>
-        <pathCost>10</pathCost>
-        <ingestible>
-            <foodType>Plant</foodType>
-            <preferability>NeverForNutrition</preferability>
-        </ingestible>
-        <plant>
-            <fertilitySensitivity>1.0</fertilitySensitivity>
-            <growDays>7</growDays>
-            <dieIfLeafless>true</dieIfLeafless>
-            <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>WoolBison</harvestedThingDef>
-            <harvestYield>10</harvestYield>
-            <sowTags>
-                <li>Ground</li>
-                <li>Hydroponic</li>
-            </sowTags>
-            <sowMinSkill>7</sowMinSkill>
-            <sowResearchPrerequisites>
-                <li>PlantsAndThingsTier2</li>
-            </sowResearchPrerequisites>
-            <immatureGraphicPath>Things/Cloth/WoolBison/growingplants</immatureGraphicPath>
-            <topWindExposure>0.1</topWindExposure>
-            <visualSizeRange>
-                <min>0.5</min>
-                <max>1.0</max>
-            </visualSizeRange>
-        </plant>
-    </ThingDef>
-    <ThingDef ParentName="PlantsAndThingsTier2Base">
-        <defName>PlantWoolSheep</defName>
-        <label>Sheep Wool Bush</label>
-        <description>Need Sheep Wool? Why not grow it?</description>
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-        </statBases>
-        <graphicData>
-            <texPath>Things/Cloth/WoolSheep</texPath>
-            <graphicClass>Graphic_random</graphicClass>
-        </graphicData>
-        <selectable>true</selectable>
-        <pathCost>10</pathCost>
-        <ingestible>
-            <foodType>Plant</foodType>
-            <preferability>NeverForNutrition</preferability>
-        </ingestible>
-        <plant>
-            <fertilitySensitivity>1.0</fertilitySensitivity>
-            <growDays>7</growDays>
-            <dieIfLeafless>true</dieIfLeafless>
-            <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>WoolSheep</harvestedThingDef>
-            <harvestYield>10</harvestYield>
-            <sowTags>
-                <li>Ground</li>
-                <li>Hydroponic</li>
-            </sowTags>
-            <sowMinSkill>7</sowMinSkill>
-            <sowResearchPrerequisites>
-                <li>PlantsAndThingsTier2</li>
-            </sowResearchPrerequisites>
-            <immatureGraphicPath>Things/Cloth/WoolSheep/growingplants</immatureGraphicPath>
-            <topWindExposure>0.1</topWindExposure>
-            <visualSizeRange>
-                <min>0.5</min>
-                <max>1.0</max>
-            </visualSizeRange>
-        </plant>
-    </ThingDef>
-    <ThingDef ParentName="PlantsAndThingsTier3Base">
-        <defName>PlantGold</defName>
-        <label>Gold Grass</label>
-        <description>Need Gold? Why not grow it?</description>
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-        </statBases>
-        <graphicData>
-            <texPath>Things/Mat/Gold</texPath>
-            <graphicClass>Graphic_random</graphicClass>
-        </graphicData>
-        <selectable>true</selectable>
-        <pathCost>10</pathCost>
-        <ingestible>
-            <foodType>Plant</foodType>
-            <preferability>NeverForNutrition</preferability>
-        </ingestible>
-        <plant>
-            <fertilitySensitivity>1.0</fertilitySensitivity>
-            <growDays>8</growDays>
-            <dieIfLeafless>true</dieIfLeafless>
-            <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>Gold</harvestedThingDef>
-            <harvestYield>7</harvestYield>
-            <sowTags>
-                <li>Ground</li>
-                <li>Hydroponic</li>
-            </sowTags>
-            <sowMinSkill>8</sowMinSkill>
-            <sowResearchPrerequisites>
-                <li>PlantsAndThingsTier3</li>
-            </sowResearchPrerequisites>
-            <immatureGraphicPath>Things/Mat/Gold/growingplants</immatureGraphicPath>
-            <topWindExposure>0.1</topWindExposure>
-            <visualSizeRange>
-                <min>0.5</min>
-                <max>1.0</max>
-            </visualSizeRange>
-        </plant>
-    </ThingDef>
-    <ThingDef ParentName="PlantsAndThingsTier3Base">
-        <defName>PlantGun_ChainShotgun</defName>
-        <label>Chain Shotgun Tree</label>
-        <description>Need a Chain Shotgun? Why not grow it?</description>
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-        </statBases>
-        <graphicData>
-            <texPath>Things/Gun/Gun_ChainShotgun</texPath>
-            <graphicClass>Graphic_random</graphicClass>
-        </graphicData>
-        <selectable>true</selectable>
-        <pathCost>10</pathCost>
-        <ingestible>
-            <foodType>Plant</foodType>
-            <preferability>NeverForNutrition</preferability>
-        </ingestible>
-        <plant>
-            <fertilitySensitivity>1.0</fertilitySensitivity>
-            <growDays>8</growDays>
-            <dieIfLeafless>true</dieIfLeafless>
-            <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>Gun_ChainShotgun</harvestedThingDef>
+            <harvestedThingDef>Gun_HeavySMG</harvestedThingDef>
             <harvestYield>1</harvestYield>
             <sowTags>
                 <li>Ground</li>
                 <li>Hydroponic</li>
             </sowTags>
+            <sowMinSkill>7</sowMinSkill>
+            <sowResearchPrerequisites>
+                <li>PlantsAndThingsTier2</li>
+            </sowResearchPrerequisites>
+            <immatureGraphicPath>Things/Gun/Gun_HeavySMG/growingplants</immatureGraphicPath>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.5</min>
+                <max>1.0</max>
+            </visualSizeRange>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="PlantsAndThingsTier2Base">
+        <defName>PlantChemfuel</defName>
+        <label>Chemfuel Berries</label>
+        <description>Need Chemfuel? Why not grow it?</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Mat/Chemfuel</texPath>
+            <graphicClass>Graphic_random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible>
+            <foodType>Plant</foodType>
+            <preferability>NeverForNutrition</preferability>
+        </ingestible>
+        <plant>
+            <fertilitySensitivity>1.0</fertilitySensitivity>
+            <growDays>7</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>Chemfuel</harvestedThingDef>
+            <harvestYield>10</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <sowMinSkill>7</sowMinSkill>
+            <sowResearchPrerequisites>
+                <li>PlantsAndThingsTier2</li>
+            </sowResearchPrerequisites>
+            <immatureGraphicPath>Things/Mat/Chemfuel/growingplants</immatureGraphicPath>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.5</min>
+                <max>1.0</max>
+            </visualSizeRange>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="PlantsAndThingsTier2Base">
+        <defName>PlantComponentIndustrial</defName>
+        <label>Component Plant</label>
+        <description>Need Components? Why not grow them?</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Mat/ComponentIndustrial</texPath>
+            <graphicClass>Graphic_random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible>
+            <foodType>Plant</foodType>
+            <preferability>NeverForNutrition</preferability>
+        </ingestible>
+        <plant>
+            <fertilitySensitivity>1.0</fertilitySensitivity>
+            <growDays>7</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>ComponentIndustrial</harvestedThingDef>
+            <harvestYield>3</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <sowMinSkill>7</sowMinSkill>
+            <sowResearchPrerequisites>
+                <li>PlantsAndThingsTier2</li>
+            </sowResearchPrerequisites>
+            <immatureGraphicPath>Things/Mat/ComponentIndustrial/growingplants</immatureGraphicPath>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.5</min>
+                <max>1.0</max>
+            </visualSizeRange>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="PlantsAndThingsTier3Base">
+        <defName>PlantSynthread</defName>
+        <label>Synthread Grass</label>
+        <description>Need Synthread? Why not grow it?</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Cloth/Synthread</texPath>
+            <graphicClass>Graphic_random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible>
+            <foodType>Plant</foodType>
+            <preferability>NeverForNutrition</preferability>
+        </ingestible>
+        <plant>
+            <fertilitySensitivity>1.0</fertilitySensitivity>
+            <growDays>8</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>Synthread</harvestedThingDef>
+            <harvestYield>10</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
             <sowMinSkill>8</sowMinSkill>
             <sowResearchPrerequisites>
                 <li>PlantsAndThingsTier3</li>
             </sowResearchPrerequisites>
-            <immatureGraphicPath>Things/Gun/Gun_ChainShotgun/growingplants</immatureGraphicPath>
+            <immatureGraphicPath>Things/Cloth/Synthread/growingplants</immatureGraphicPath>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.5</min>
+                <max>1.0</max>
+            </visualSizeRange>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="PlantsAndThingsTier3Base">
+        <defName>PlantWoolMuffalo</defName>
+        <label>Muffalo Wool Bush</label>
+        <description>Need Muffalo Wool? Why not grow it?</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Cloth/WoolMuffalo</texPath>
+            <graphicClass>Graphic_random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible>
+            <foodType>Plant</foodType>
+            <preferability>NeverForNutrition</preferability>
+        </ingestible>
+        <plant>
+            <fertilitySensitivity>1.0</fertilitySensitivity>
+            <growDays>8</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>WoolMuffalo</harvestedThingDef>
+            <harvestYield>8</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <sowMinSkill>8</sowMinSkill>
+            <sowResearchPrerequisites>
+                <li>PlantsAndThingsTier3</li>
+            </sowResearchPrerequisites>
+            <immatureGraphicPath>Things/Cloth/WoolMuffalo/growingplants</immatureGraphicPath>
             <topWindExposure>0.1</topWindExposure>
             <visualSizeRange>
                 <min>0.5</min>
@@ -921,14 +921,14 @@
         </plant>
     </ThingDef>
     <ThingDef ParentName="PlantsAndThingsTier3Base">
-        <defName>PlantMedicineIndustrial</defName>
-        <label>Medicine Case</label>
-        <description>Need Medicine? Why not grow it?</description>
+        <defName>PlantGun_ChainShotgun</defName>
+        <label>Chain Shotgun Tree</label>
+        <description>Need a Chain Shotgun? Why not grow it?</description>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
         </statBases>
         <graphicData>
-            <texPath>Things/Med/MedicineIndustrial</texPath>
+            <texPath>Things/Gun/Gun_ChainShotgun</texPath>
             <graphicClass>Graphic_random</graphicClass>
         </graphicData>
         <selectable>true</selectable>
@@ -942,8 +942,8 @@
             <growDays>8</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>MedicineIndustrial</harvestedThingDef>
-            <harvestYield>5</harvestYield>
+            <harvestedThingDef>Gun_ChainShotgun</harvestedThingDef>
+            <harvestYield>1</harvestYield>
             <sowTags>
                 <li>Ground</li>
                 <li>Hydroponic</li>
@@ -952,10 +952,50 @@
             <sowResearchPrerequisites>
                 <li>PlantsAndThingsTier3</li>
             </sowResearchPrerequisites>
-            <immatureGraphicPath>Things/Med/MedicineIndustrial/growingplants</immatureGraphicPath>
+            <immatureGraphicPath>Things/Gun/Gun_ChainShotgun/growingplants</immatureGraphicPath>
             <topWindExposure>0.1</topWindExposure>
             <visualSizeRange>
-                <min>1</min>
+                <min>0.5</min>
+                <max>1.0</max>
+            </visualSizeRange>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="PlantsAndThingsTier3Base">
+        <defName>PlantGold</defName>
+        <label>Gold Grass</label>
+        <description>Need Gold? Why not grow it?</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Mat/Gold</texPath>
+            <graphicClass>Graphic_random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible>
+            <foodType>Plant</foodType>
+            <preferability>NeverForNutrition</preferability>
+        </ingestible>
+        <plant>
+            <fertilitySensitivity>1.0</fertilitySensitivity>
+            <growDays>8</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>Gold</harvestedThingDef>
+            <harvestYield>7</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <sowMinSkill>8</sowMinSkill>
+            <sowResearchPrerequisites>
+                <li>PlantsAndThingsTier3</li>
+            </sowResearchPrerequisites>
+            <immatureGraphicPath>Things/Mat/Gold/growingplants</immatureGraphicPath>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.5</min>
                 <max>1.0</max>
             </visualSizeRange>
         </plant>
@@ -1001,14 +1041,14 @@
         </plant>
     </ThingDef>
     <ThingDef ParentName="PlantsAndThingsTier3Base">
-        <defName>PlantSynthread</defName>
-        <label>Synthread Grass</label>
-        <description>Need Synthread? Why not grow it?</description>
+        <defName>PlantMedicineIndustrial</defName>
+        <label>Medicine Case</label>
+        <description>Need Medicine? Why not grow it?</description>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
         </statBases>
         <graphicData>
-            <texPath>Things/Cloth/Synthread</texPath>
+            <texPath>Things/Med/MedicineIndustrial</texPath>
             <graphicClass>Graphic_random</graphicClass>
         </graphicData>
         <selectable>true</selectable>
@@ -1022,8 +1062,8 @@
             <growDays>8</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>Synthread</harvestedThingDef>
-            <harvestYield>10</harvestYield>
+            <harvestedThingDef>MedicineIndustrial</harvestedThingDef>
+            <harvestYield>5</harvestYield>
             <sowTags>
                 <li>Ground</li>
                 <li>Hydroponic</li>
@@ -1032,130 +1072,10 @@
             <sowResearchPrerequisites>
                 <li>PlantsAndThingsTier3</li>
             </sowResearchPrerequisites>
-            <immatureGraphicPath>Things/Cloth/Synthread/growingplants</immatureGraphicPath>
+            <immatureGraphicPath>Things/Med/MedicineIndustrial/growingplants</immatureGraphicPath>
             <topWindExposure>0.1</topWindExposure>
             <visualSizeRange>
-                <min>0.5</min>
-                <max>1.0</max>
-            </visualSizeRange>
-        </plant>
-    </ThingDef>
-    <ThingDef ParentName="PlantsAndThingsTier3Base">
-        <defName>PlantWoolMuffalo</defName>
-        <label>Muffalo Wool Bush</label>
-        <description>Need Muffalo Wool? Why not grow it?</description>
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-        </statBases>
-        <graphicData>
-            <texPath>Things/Cloth/WoolMuffalo</texPath>
-            <graphicClass>Graphic_random</graphicClass>
-        </graphicData>
-        <selectable>true</selectable>
-        <pathCost>10</pathCost>
-        <ingestible>
-            <foodType>Plant</foodType>
-            <preferability>NeverForNutrition</preferability>
-        </ingestible>
-        <plant>
-            <fertilitySensitivity>1.0</fertilitySensitivity>
-            <growDays>8</growDays>
-            <dieIfLeafless>true</dieIfLeafless>
-            <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>WoolMuffalo</harvestedThingDef>
-            <harvestYield>8</harvestYield>
-            <sowTags>
-                <li>Ground</li>
-                <li>Hydroponic</li>
-            </sowTags>
-            <sowMinSkill>8</sowMinSkill>
-            <sowResearchPrerequisites>
-                <li>PlantsAndThingsTier3</li>
-            </sowResearchPrerequisites>
-            <immatureGraphicPath>Things/Cloth/WoolMuffalo/growingplants</immatureGraphicPath>
-            <topWindExposure>0.1</topWindExposure>
-            <visualSizeRange>
-                <min>0.5</min>
-                <max>1.0</max>
-            </visualSizeRange>
-        </plant>
-    </ThingDef>
-    <ThingDef ParentName="PlantsAndThingsTier4Base">
-        <defName>PlantComponentSpacer</defName>
-        <label>Advanced Component Plant</label>
-        <description>Need Advanced Components? Why not grow them?</description>
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-        </statBases>
-        <graphicData>
-            <texPath>Things/Mat/ComponentSpacer</texPath>
-            <graphicClass>Graphic_random</graphicClass>
-        </graphicData>
-        <selectable>true</selectable>
-        <pathCost>10</pathCost>
-        <ingestible>
-            <foodType>Plant</foodType>
-            <preferability>NeverForNutrition</preferability>
-        </ingestible>
-        <plant>
-            <fertilitySensitivity>1.0</fertilitySensitivity>
-            <growDays>9</growDays>
-            <dieIfLeafless>true</dieIfLeafless>
-            <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>ComponentSpacer</harvestedThingDef>
-            <harvestYield>2</harvestYield>
-            <sowTags>
-                <li>Ground</li>
-                <li>Hydroponic</li>
-            </sowTags>
-            <sowMinSkill>9</sowMinSkill>
-            <sowResearchPrerequisites>
-                <li>PlantsAndThingsTier4</li>
-            </sowResearchPrerequisites>
-            <immatureGraphicPath>Things/Mat/ComponentSpacer/growingplants</immatureGraphicPath>
-            <topWindExposure>0.1</topWindExposure>
-            <visualSizeRange>
-                <min>0.5</min>
-                <max>1.0</max>
-            </visualSizeRange>
-        </plant>
-    </ThingDef>
-    <ThingDef ParentName="PlantsAndThingsTier4Base">
-        <defName>PlantGun_ChargeRifle</defName>
-        <label>Charge Rifle Tree</label>
-        <description>Need a Charge Rifle? Why not grow it?</description>
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-        </statBases>
-        <graphicData>
-            <texPath>Things/Gun/Gun_ChargeRifle</texPath>
-            <graphicClass>Graphic_random</graphicClass>
-        </graphicData>
-        <selectable>true</selectable>
-        <pathCost>10</pathCost>
-        <ingestible>
-            <foodType>Plant</foodType>
-            <preferability>NeverForNutrition</preferability>
-        </ingestible>
-        <plant>
-            <fertilitySensitivity>1.0</fertilitySensitivity>
-            <growDays>9</growDays>
-            <dieIfLeafless>true</dieIfLeafless>
-            <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>Gun_ChargeRifle</harvestedThingDef>
-            <harvestYield>1</harvestYield>
-            <sowTags>
-                <li>Ground</li>
-                <li>Hydroponic</li>
-            </sowTags>
-            <sowMinSkill>9</sowMinSkill>
-            <sowResearchPrerequisites>
-                <li>PlantsAndThingsTier4</li>
-            </sowResearchPrerequisites>
-            <immatureGraphicPath>Things/Gun/Gun_ChargeRifle/growingplants</immatureGraphicPath>
-            <topWindExposure>0.1</topWindExposure>
-            <visualSizeRange>
-                <min>0.5</min>
+                <min>1</min>
                 <max>1.0</max>
             </visualSizeRange>
         </plant>
@@ -1193,46 +1113,6 @@
                 <li>PlantsAndThingsTier4</li>
             </sowResearchPrerequisites>
             <immatureGraphicPath>Things/Cloth/Hyperweave/growingplants</immatureGraphicPath>
-            <topWindExposure>0.1</topWindExposure>
-            <visualSizeRange>
-                <min>0.5</min>
-                <max>1.0</max>
-            </visualSizeRange>
-        </plant>
-    </ThingDef>
-    <ThingDef ParentName="PlantsAndThingsTier4Base">
-        <defName>PlantJade</defName>
-        <label>Jade Grass</label>
-        <description>Need Jade? Why not grow it?</description>
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-        </statBases>
-        <graphicData>
-            <texPath>Things/Mat/Jade</texPath>
-            <graphicClass>Graphic_random</graphicClass>
-        </graphicData>
-        <selectable>true</selectable>
-        <pathCost>10</pathCost>
-        <ingestible>
-            <foodType>Plant</foodType>
-            <preferability>NeverForNutrition</preferability>
-        </ingestible>
-        <plant>
-            <fertilitySensitivity>1.0</fertilitySensitivity>
-            <growDays>9</growDays>
-            <dieIfLeafless>true</dieIfLeafless>
-            <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>Jade</harvestedThingDef>
-            <harvestYield>5</harvestYield>
-            <sowTags>
-                <li>Ground</li>
-                <li>Hydroponic</li>
-            </sowTags>
-            <sowMinSkill>9</sowMinSkill>
-            <sowResearchPrerequisites>
-                <li>PlantsAndThingsTier4</li>
-            </sowResearchPrerequisites>
-            <immatureGraphicPath>Things/Mat/Jade/growingplants</immatureGraphicPath>
             <topWindExposure>0.1</topWindExposure>
             <visualSizeRange>
                 <min>0.5</min>
@@ -1361,6 +1241,126 @@
         </plant>
     </ThingDef>
     <ThingDef ParentName="PlantsAndThingsTier4Base">
+        <defName>PlantGun_ChargeRifle</defName>
+        <label>Charge Rifle Tree</label>
+        <description>Need a Charge Rifle? Why not grow it?</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Gun/Gun_ChargeRifle</texPath>
+            <graphicClass>Graphic_random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible>
+            <foodType>Plant</foodType>
+            <preferability>NeverForNutrition</preferability>
+        </ingestible>
+        <plant>
+            <fertilitySensitivity>1.0</fertilitySensitivity>
+            <growDays>9</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>Gun_ChargeRifle</harvestedThingDef>
+            <harvestYield>1</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <sowMinSkill>9</sowMinSkill>
+            <sowResearchPrerequisites>
+                <li>PlantsAndThingsTier4</li>
+            </sowResearchPrerequisites>
+            <immatureGraphicPath>Things/Gun/Gun_ChargeRifle/growingplants</immatureGraphicPath>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.5</min>
+                <max>1.0</max>
+            </visualSizeRange>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="PlantsAndThingsTier4Base">
+        <defName>PlantComponentSpacer</defName>
+        <label>Advanced Component Plant</label>
+        <description>Need Advanced Components? Why not grow them?</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Mat/ComponentSpacer</texPath>
+            <graphicClass>Graphic_random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible>
+            <foodType>Plant</foodType>
+            <preferability>NeverForNutrition</preferability>
+        </ingestible>
+        <plant>
+            <fertilitySensitivity>1.0</fertilitySensitivity>
+            <growDays>9</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>ComponentSpacer</harvestedThingDef>
+            <harvestYield>2</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <sowMinSkill>9</sowMinSkill>
+            <sowResearchPrerequisites>
+                <li>PlantsAndThingsTier4</li>
+            </sowResearchPrerequisites>
+            <immatureGraphicPath>Things/Mat/ComponentSpacer/growingplants</immatureGraphicPath>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.5</min>
+                <max>1.0</max>
+            </visualSizeRange>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="PlantsAndThingsTier4Base">
+        <defName>PlantJade</defName>
+        <label>Jade Grass</label>
+        <description>Need Jade? Why not grow it?</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Mat/Jade</texPath>
+            <graphicClass>Graphic_random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible>
+            <foodType>Plant</foodType>
+            <preferability>NeverForNutrition</preferability>
+        </ingestible>
+        <plant>
+            <fertilitySensitivity>1.0</fertilitySensitivity>
+            <growDays>9</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>Jade</harvestedThingDef>
+            <harvestYield>5</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <sowMinSkill>9</sowMinSkill>
+            <sowResearchPrerequisites>
+                <li>PlantsAndThingsTier4</li>
+            </sowResearchPrerequisites>
+            <immatureGraphicPath>Things/Mat/Jade/growingplants</immatureGraphicPath>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.5</min>
+                <max>1.0</max>
+            </visualSizeRange>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="PlantsAndThingsTier4Base">
         <defName>PlantUranium</defName>
         <label>Uranium Plant</label>
         <description>Need Uranium? Why not grow it?</description>
@@ -1419,7 +1419,7 @@
         </ingestible>
         <plant>
             <fertilitySensitivity>1.0</fertilitySensitivity>
-            <growDays>12</growDays>
+            <growDays>10</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestTag>Standard</harvestTag>
             <harvestedThingDef>BionicArm</harvestedThingDef>
@@ -1579,7 +1579,7 @@
         </ingestible>
         <plant>
             <fertilitySensitivity>1.0</fertilitySensitivity>
-            <growDays>12</growDays>
+            <growDays>10</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestTag>Standard</harvestTag>
             <harvestedThingDef>BionicLeg</harvestedThingDef>
@@ -1681,6 +1681,46 @@
         </plant>
     </ThingDef>
     <ThingDef ParentName="PlantsAndThingsTier6Base">
+        <defName>PlantSilver</defName>
+        <label>Silver Grass</label>
+        <description>Need Silver? Why not grow it?</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Mat/Silver</texPath>
+            <graphicClass>Graphic_random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible>
+            <foodType>Plant</foodType>
+            <preferability>NeverForNutrition</preferability>
+        </ingestible>
+        <plant>
+            <fertilitySensitivity>1.0</fertilitySensitivity>
+            <growDays>12</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>Silver</harvestedThingDef>
+            <harvestYield>10</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <sowMinSkill>12</sowMinSkill>
+            <sowResearchPrerequisites>
+                <li>PlantsAndThingsTier6</li>
+            </sowResearchPrerequisites>
+            <immatureGraphicPath>Things/Mat/Silver/growingplants</immatureGraphicPath>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.5</min>
+                <max>1.0</max>
+            </visualSizeRange>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="PlantsAndThingsTier6Base">
         <defName>PlantArchotechArm</defName>
         <label>Archotech Arm Vessel</label>
         <description>Need Archotech Arms? Why not grow them?</description>
@@ -1699,7 +1739,7 @@
         </ingestible>
         <plant>
             <fertilitySensitivity>1.0</fertilitySensitivity>
-            <growDays>14</growDays>
+            <growDays>12</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestTag>Standard</harvestTag>
             <harvestedThingDef>ArchotechArm</harvestedThingDef>
@@ -1779,7 +1819,7 @@
         </ingestible>
         <plant>
             <fertilitySensitivity>1.0</fertilitySensitivity>
-            <growDays>14</growDays>
+            <growDays>12</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestTag>Standard</harvestTag>
             <harvestedThingDef>ArchotechLeg</harvestedThingDef>
@@ -1960,15 +2000,17 @@
             </visualSizeRange>
         </plant>
     </ThingDef>
-    <ThingDef ParentName="PlantsAndThingsTier6Base">
-        <defName>PlantSilver</defName>
-        <label>Silver Grass</label>
-        <description>Need Silver? Why not grow it?</description>
+
+
+    <ThingDef ParentName="PlantsAndThingsBlocksBase">
+        <defName>PlantBlocksSandstone</defName>
+        <label>Sandstone Pillar</label>
+        <description>Need Sandstone? Why not grow it?</description>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
         </statBases>
         <graphicData>
-            <texPath>Things/Mat/Silver</texPath>
+            <texPath>Things/Blocks/BlocksSandstone</texPath>
             <graphicClass>Graphic_random</graphicClass>
         </graphicData>
         <selectable>true</selectable>
@@ -1979,25 +2021,186 @@
         </ingestible>
         <plant>
             <fertilitySensitivity>1.0</fertilitySensitivity>
-            <growDays>12</growDays>
+            <growDays>6</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>Silver</harvestedThingDef>
-            <harvestYield>10</harvestYield>
+            <harvestedThingDef>BlocksSandstone</harvestedThingDef>
+            <harvestYield>4</harvestYield>
             <sowTags>
                 <li>Ground</li>
                 <li>Hydroponic</li>
             </sowTags>
-            <sowMinSkill>12</sowMinSkill>
+            <sowMinSkill>6</sowMinSkill>
             <sowResearchPrerequisites>
-                <li>PlantsAndThingsTier6</li>
+                <li>PlantsAndThingsBlocks</li>
             </sowResearchPrerequisites>
-            <immatureGraphicPath>Things/Mat/Silver/growingplants</immatureGraphicPath>
+            <immatureGraphicPath>Things/Blocks/BlocksSandstone/growingplants</immatureGraphicPath>
             <topWindExposure>0.1</topWindExposure>
             <visualSizeRange>
-                <min>0.5</min>
+                <min>0.1</min>
                 <max>1.0</max>
             </visualSizeRange>
         </plant>
     </ThingDef>
+    <ThingDef ParentName="PlantsAndThingsBlocksBase">
+        <defName>PlantBlocksMarble</defName>
+        <label>Marble Pillar</label>
+        <description>Need Marble? Why not grow it?</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Blocks/BlocksMarble</texPath>
+            <graphicClass>Graphic_random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible>
+            <foodType>Plant</foodType>
+            <preferability>NeverForNutrition</preferability>
+        </ingestible>
+        <plant>
+            <fertilitySensitivity>1.0</fertilitySensitivity>
+            <growDays>6</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>BlocksMarble</harvestedThingDef>
+            <harvestYield>4</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <sowMinSkill>6</sowMinSkill>
+            <sowResearchPrerequisites>
+                <li>PlantsAndThingsBlocks</li>
+            </sowResearchPrerequisites>
+            <immatureGraphicPath>Things/Blocks/BlocksMarble/growingplants</immatureGraphicPath>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.1</min>
+                <max>1.0</max>
+            </visualSizeRange>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="PlantsAndThingsBlocksBase">
+        <defName>PlantBlocksGranite</defName>
+        <label>Granite Pillar</label>
+        <description>Need Granite? Why not grow it?</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Blocks/BlocksGranite</texPath>
+            <graphicClass>Graphic_random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible>
+            <foodType>Plant</foodType>
+            <preferability>NeverForNutrition</preferability>
+        </ingestible>
+        <plant>
+            <fertilitySensitivity>1.0</fertilitySensitivity>
+            <growDays>6</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>BlocksGranite</harvestedThingDef>
+            <harvestYield>4</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <sowMinSkill>6</sowMinSkill>
+            <sowResearchPrerequisites>
+                <li>PlantsAndThingsBlocks</li>
+            </sowResearchPrerequisites>
+            <immatureGraphicPath>Things/Blocks/BlocksGranite/growingplants</immatureGraphicPath>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.1</min>
+                <max>1.0</max>
+            </visualSizeRange>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="PlantsAndThingsBlocksBase">
+        <defName>PlantBlocksSlate</defName>
+        <label>Slate Pillar</label>
+        <description>Need Slate? Why not grow it?</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Blocks/BlocksSlate</texPath>
+            <graphicClass>Graphic_random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible>
+            <foodType>Plant</foodType>
+            <preferability>NeverForNutrition</preferability>
+        </ingestible>
+        <plant>
+            <fertilitySensitivity>1.0</fertilitySensitivity>
+            <growDays>6</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>BlocksSlate</harvestedThingDef>
+            <harvestYield>4</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <sowMinSkill>6</sowMinSkill>
+            <sowResearchPrerequisites>
+                <li>PlantsAndThingsBlocks</li>
+            </sowResearchPrerequisites>
+            <immatureGraphicPath>Things/Blocks/BlocksSlate/growingplants</immatureGraphicPath>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.1</min>
+                <max>1.0</max>
+            </visualSizeRange>
+        </plant>
+    </ThingDef>
+    <ThingDef ParentName="PlantsAndThingsBlocksBase">
+        <defName>PlantBlocksLimestone</defName>
+        <label>Limestone Pillar</label>
+        <description>Need Limestone? Why not grow it?</description>
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Blocks/BlocksLimestone</texPath>
+            <graphicClass>Graphic_random</graphicClass>
+        </graphicData>
+        <selectable>true</selectable>
+        <pathCost>10</pathCost>
+        <ingestible>
+            <foodType>Plant</foodType>
+            <preferability>NeverForNutrition</preferability>
+        </ingestible>
+        <plant>
+            <fertilitySensitivity>1.0</fertilitySensitivity>
+            <growDays>6</growDays>
+            <dieIfLeafless>true</dieIfLeafless>
+            <harvestTag>Standard</harvestTag>
+            <harvestedThingDef>BlocksLimestone</harvestedThingDef>
+            <harvestYield>4</harvestYield>
+            <sowTags>
+                <li>Ground</li>
+                <li>Hydroponic</li>
+            </sowTags>
+            <sowMinSkill>6</sowMinSkill>
+            <sowResearchPrerequisites>
+                <li>PlantsAndThingsBlocks</li>
+            </sowResearchPrerequisites>
+            <immatureGraphicPath>Things/Blocks/BlocksLimestone/growingplants</immatureGraphicPath>
+            <topWindExposure>0.1</topWindExposure>
+            <visualSizeRange>
+                <min>0.1</min>
+                <max>1.0</max>
+            </visualSizeRange>
+        </plant>
+    </ThingDef>
+
 </Defs>
